@@ -1,0 +1,15 @@
+import NextAuth from "@node_modules/next-auth";
+import GoogleProvider from "@node_modules/next-auth/providers/google";
+
+const handler = NextAuth({
+  orivuders: [
+    GoogleProvider({
+      clientId: "",
+      clientSecret: "",
+    }),
+  ],
+  async session({ session }) {},
+  async signIn({ profile }) {},
+});
+
+export { handler as GET, handler as POST };
