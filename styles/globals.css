@@ -7,6 +7,10 @@
   --color-primary-orange: #FF5722;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
